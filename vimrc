@@ -470,7 +470,7 @@ map <leader>tn :tabnext<cr> " 下一个tab(next)
 map <leader>tp :tabprev<cr> " 前一个tab(previous)
 
 map <leader>te :tabedit<cr> " tabedit
-map <leader>td :tabclose<cr> " 关闭tab
+map <leader>tc :tabclose<cr> " 关闭tab
 map <leader>tm :tabm<cr> " tabm
 
 " normal模式下切换到确切的tab
