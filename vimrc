@@ -100,9 +100,9 @@ set t_ti= t_te=
 
 
 " 键盘党....
-" set mouse-=a
+ set mouse-=a
 " 启用鼠标
- set mouse=a
+" set mouse=a
 " Hide the mouse cursor while typing
 " set mousehide
 
@@ -655,8 +655,11 @@ endif
 set background=dark
 set t_Co=256
 
+" mkdir -p ~/.vim/colors/
 " colorscheme solarized
+" curl -SL# https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -o ~/.vim/colors/solarized.vim
 " colorscheme molokai
+" curl -SL# https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim -o ~/.vim/colors/molokai.vim
 colorscheme desert
 
 
