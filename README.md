@@ -20,13 +20,14 @@ Tian Vimrc Config
 
 
 
+
 安装
 -----
 
 虽然说叫安装，起始就是下载罢了。
 
 ```bash
-curl -S# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.vimrc
+curl -SL# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.vimrc
 ```
 
 里面的配置完全可以按照自己的情况改，基本上都有功能注释的。
@@ -39,7 +40,7 @@ curl -S# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.v
 自定义配置说明
 -------------
 
-1. 默认开启了鼠标
+1. 默认关闭了鼠标，做键盘党 (因为开启鼠标感觉更难用了)
 
 2. 打开自动定位到最后编辑的位置, 需要 `~/.viminfo` 文件当前用户可写
 
@@ -134,6 +135,7 @@ curl -S# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.v
    Normal 模式下 `<Leader>1--9` 直接切换到对应序号的 tab
 
 39. 没有再做 `<Esc>` 的映射，因为 `Ctrl+[` 本身就是输出 ESC 字符
+
 
 
 
