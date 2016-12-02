@@ -461,17 +461,24 @@ noremap <right> :bn<CR>
 " http://stackoverflow.com/questions/2005214/switching-to-a-particular-tab-in-vim
 
 " tab切换
-map <leader>th :tabfirst<cr> " 切第1个tab
-map <leader>tl :tablast<cr> " 切最后一个tab
-
-map <leader>tj :tabnext<cr> " 下一个tab
-map <leader>tk :tabprev<cr> " 上一个tab
-map <leader>tn :tabnext<cr> " 下一个tab(next)
-map <leader>tp :tabprev<cr> " 前一个tab(previous)
-
-map <leader>te :tabedit<cr> " tabedit
-map <leader>tc :tabclose<cr> " 关闭tab
-map <leader>tm :tabm<cr> " tabm
+" 切第1个tab
+map <leader>th :tabfirst<cr>
+" 切最后一个tab
+map <leader>tl :tablast<cr>
+" 下一个tab
+map <leader>tj :tabnext<cr> 
+" 上一个tab
+map <leader>tk :tabprev<cr>
+" 下一个tab(next)
+map <leader>tn :tabnext<cr>
+" 前一个tab(previous)
+map <leader>tp :tabprev<cr>
+" tabedit
+map <leader>te :tabedit<cr>
+" 关闭tab
+map <leader>tc :tabclose<cr>
+" tabm
+map <leader>tm :tabm<cr>
 
 " normal模式下切换到确切的tab
 noremap <leader>1 1gt
