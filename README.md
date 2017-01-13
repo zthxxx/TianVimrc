@@ -16,7 +16,9 @@ Tian Vimrc Config
 
 当然，最简单的就是把自己习惯的 `.vimrc` 放到 github，然后要配置的服务器初始话时都去下这个配置文件就好，于是有了做个仓库。
 
-有大部分配置参照了 [wklken](https://github.com/wklken) 的 [k-vim](https://github.com/wklken/k-vim)
+因为想做简单的轻量级，所以没加插件了。（支持安装插件）
+
+有大部分配置参照了 [wklken](https://github.com/wklken) 的 [k-vim](https://github.com/wklken/k-vim) 。
 
 
 
@@ -24,7 +26,7 @@ Tian Vimrc Config
 安装
 -----
 
-虽然说叫安装，起始就是下载罢了。
+虽然说叫安装，其实就是下载文件再改名罢了。（首先确认你有网络并且有权限）
 
 ```bash
 curl -SL# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.vimrc
@@ -144,3 +146,9 @@ curl -SL# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.
 -----
 
 有问题欢迎提 pull request 和 issues ~~
+
+
+
+## Licence
+
+[MIT](https://opensource.org/licenses/MIT)
