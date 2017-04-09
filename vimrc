@@ -2,9 +2,9 @@
 " Author:  zthxxx
 " Version: 1.0
 " Email: zth_9451@qq.com
-" BlogPost: http://blog.zthxxx.top
+" BlogPost: https://blog.zthxxx.me
 " ReadMe: README.md
-" Last_modify: 2016-12-02
+" Last_modify: 2017-04-09
 " Sections:
 "       -> Initial Plugin 加载插件
 "       -> General Settings 基础设置
@@ -39,8 +39,8 @@ filetype plugin indent on
 "==========================================
 
 " 修改leader键
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = ' '
+let g:mapleader = ' '
 
 " 开启语法高亮
 syntax on
@@ -422,8 +422,6 @@ cnoremap <C-e> <End>
 
 
 " 搜索相关
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
 " 进入搜索Use sane regexes"
 nnoremap / /\v
 vnoremap / /\v
