@@ -1,6 +1,6 @@
 "==========================================
 " Author:  zthxxx
-" Version: 1.0
+" Version: 1.1
 " Email: zth_9451@qq.com
 " BlogPost: https://blog.zthxxx.me
 " ReadMe: README.md
