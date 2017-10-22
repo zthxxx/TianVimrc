@@ -30,6 +30,8 @@ Tian Vimrc Config
 
 ```bash
 curl -SL# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.vimrc
+# or use shorten
+curl -SL# https://git.io/tvimrc -o ~/.vimrc
 ```
 
 里面的配置完全可以按照自己的情况改，基本上都有功能注释的。
