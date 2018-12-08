@@ -459,18 +459,18 @@ noremap <right> :bn<CR>
 " http://stackoverflow.com/questions/2005214/switching-to-a-particular-tab-in-vim
 
 " tab切换
-" 切第1个tab
-map <leader>th :tabfirst<cr>
-" 切最后一个tab
-map <leader>tl :tablast<cr>
-" 下一个tab
-map <leader>tj :tabnext<cr> 
 " 上一个tab
-map <leader>tk :tabprev<cr>
-" 下一个tab(next)
-map <leader>tn :tabnext<cr>
+map <leader>th :tabprev<cr>
+" 下一个tab
+map <leader>tl :tabnext<cr> 
+" 切第1个tab
+map <leader>tk :tabfirst<cr>
+" 切最后一个tab
+map <leader>tj :tablast<cr>
 " 前一个tab(previous)
 map <leader>tp :tabprev<cr>
+" 后一个tab(next)
+map <leader>tn :tabnext<cr>
 " tabedit
 map <leader>te :tabedit<cr>
 " 关闭tab
@@ -496,7 +496,7 @@ let g:last_active_tab = 1
 " nnoremap <leader>gt :execute 'tabnext ' . g:last_active_tab<cr>
 " nnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
 " vnoremap <silent> <c-o> :execute 'tabnext ' . g:last_active_tab<cr>
-nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
+" nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
 autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
 " 新建tab  Ctrl+t
@@ -684,5 +684,12 @@ highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
 
+" NERDTree
+" https://github.com/scrooloose/nerdtree
+" curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
+" apt-vim install -y https://github.com/scrooloose/nerdtree.git
+map <leader>t :NERDTreeToggle<cr>
 
-
+" open NERDTree automatically when vim starts up on opening a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif

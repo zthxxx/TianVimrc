@@ -29,9 +29,10 @@ Tian Vimrc Config
 虽然说叫安装，其实就是下载文件再改名罢了。（首先确认你有网络并且有权限）
 
 ```bash
-curl -SL# https://raw.githubusercontent.com/zthxxx/TianVimrc/master/vimrc -o ~/.vimrc
-# or use shorten
+# short link
 curl -SL# git.io/tvimrc -o ~/.vimrc
+# or install script, will install plugins
+curl -sSL https://raw.githubusercontent.com/zthxxx/TianVimrc/master/install.sh | bash
 ```
 
 里面的配置完全可以按照自己的情况改，基本上都有功能注释的。
@@ -46,7 +47,7 @@ curl -SL# git.io/tvimrc -o ~/.vimrc
 
 1. 默认关闭了鼠标，做键盘党 (因为开启鼠标感觉更难用了)
 2. 打开自动定位到最后编辑的位置, 需要 `~/.viminfo` 文件当前用户可写
-3. 支持插件，只是一般没用到
+3. 支持插件，只是一般没用到，需要自己安装，推荐 [apt-vim](https://github.com/egalpin/apt-vim)
 4. 高亮语法、文件类型检测、自动补全、自动载入、无备份和交换文件，行突出显示，开启行号，无自动换行，自动缩进、Tab 转 4 空格、代码高亮等基础配置
 5. 全程 utf-8，关闭提示音， 显示 vim 工作模式
 6. 普通模式下屏蔽了"上下左右"， 强迫自己使用 `hjkl`
@@ -81,19 +82,19 @@ curl -SL# git.io/tvimrc -o ~/.vimrc
 35. `<Leader>zz` 折叠和打开 toggle
 36. `<Leader>y` 复制选中区域到剪切板
 37. `<C-t>` 新建 tab 标签页
-    - `<Leader>th` 切换到第一个 tab
-    - `<Leader>tl` 切换到最后一个 tab
-    - `<Leader>tj` 下一个 tab
-    - `<Leader>tk` 上一个 tab
-    - `<Leader>tn` 下一个 tab (next)
+    - `<Leader>tk` 切换到第一个 tab
+    - `<Leader>tj` 切换到最后一个 tab
+    - `<Leader>tl` 下一个 tab
+    - `<Leader>tH` 上一个 tab
     - `<Leader>tp` 前一个 tab (previous)
+    - `<Leader>tn` 后一个 tab (next)
     - `<Leader>te` 编辑 tab (edit)
     - `<Leader>tc` 关闭 tab (close)
     - Normal 模式下 `<Leader>1--9` 直接切换到对应序号的 tab
 38. 没有再做 `<Esc>` 的映射，因为 `Ctrl+[` 本身就是输出 ESC 字符
-
-
-
+39. 如果安装了 [NERDTree](https://github.com/scrooloose/nerdtree) 目录树插件，
+    - `<Leader>t` 打开/关闭 NERDTree
+    - `vim .` 或者 `vim ~/some-directory` 直接自动打开到对应目录下目录树
 
 
 最后
