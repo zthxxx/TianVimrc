@@ -91,7 +91,9 @@ curl -sSL https://raw.githubusercontent.com/zthxxx/TianVimrc/master/install.sh |
     - `<Leader>te` 编辑 tab (edit)
     - `<Leader>tc` 关闭 tab (close)
     - Normal 模式下 `<Leader>1--9` 直接切换到对应序号的 tab
-38. 没有再做 `<Esc>` 的映射，因为 `Ctrl+[` 本身就是输出 ESC 字符
+38. ~~没有再做 `<Esc>` 的映射，因为 `Ctrl+[` 本身就是输出 ESC 字符~~
+
+  `<Esc>` 映射为 `<Leader>[`，因为在一些应用如 web shell 中，不能接收 `ESC` 或 `Ctrl+[` 本身
 39. 如果安装了 [NERDTree](https://github.com/scrooloose/nerdtree) 目录树插件，
     - `<Leader>t` 打开/关闭 NERDTree
     - `vim .` 或者 `vim ~/some-directory` 直接自动打开到对应目录下目录树

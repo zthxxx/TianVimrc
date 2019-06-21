@@ -1,10 +1,7 @@
 "==========================================
 " Author:  zthxxx
-" Version: 1.1
-" Email: zth_9451@qq.com
 " BlogPost: https://blog.zthxxx.me
 " ReadMe: README.md
-" Last_modify: 2017-04-09
 " Sections:
 "       -> Initial Plugin 加载插件
 "       -> General Settings 基础设置
@@ -15,7 +12,7 @@
 "       -> FileType Settings  针对文件类型的设置
 "       -> Theme Settings  主题设置
 "
-"       -> 插件配置和具体设置在vimrc.bundles中
+"       -> 插件配置和具体设置在 vimrc.bundles 中
 "==========================================
 
 "==========================================
@@ -41,6 +38,9 @@ filetype plugin indent on
 " 修改leader键
 let mapleader = ' '
 let g:mapleader = ' '
+
+" 映射 ESC
+inoremap <leader>[ <Esc>
 
 " 开启语法高亮
 syntax on
